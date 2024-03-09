@@ -28,3 +28,26 @@ c. QToolbar – This widget is used to add a frame-like container to the top of 
 The PyQT5 library does not come installed with Python, and the QtWebEngineWidgets module does not come installed with the PyQt5 library, so we will need to run the following command in the command terminal to install them:
 
 python -m pip install pyqt5 qtwebengine
+
+Explanation:
+
+We start off by creating a Window class inherited from the QMainWindow class of the PyQt5 library.
+In the __init__() function, we give it all the methods, attributes of the Window class, which in turn has functions from its parent class.
+Then, we go on creating the layout of the window.
+Firstly, we go about setting the details of the QWebEngineView object, including its position in the main window, its initial URL, how to change the URL and the Address bar, and setting its status bar.
+Then we create 2 toolbars. Add them to the window, add widgets in them and set them in two different lines.
+The navigation_bar toolbar has the back, reload, home action buttons and the address bar.
+The bookmarks_toolbar contains bookmarks of the websites that you want to set as bookmarks.
+To add 2 toolbars in 2 separate rows, you need to use the QMainWindow.addToolBarbreak() method to add a separator that separates the two toolbars.
+The QtWidgets.QAction() function is used to add a special kind of button where each command is represented as an action, which will represent our bookmarks.
+The go_to_home() method is used to set the URL of the browser back to the google homepage, which is our homepage as well.
+The go_to_URL() method, which takes one QUrl object as argument, is used to change the URL of the browser and in the address bar. In case the URL does not have a ‘http://’ or ‘https://’ prefix, the function will add it and then move forward with it.
+To activate this method and search your URL, press the enter key on your keyboard.
+The update_AddressBar() method is used to set the text of our address bar to the string version of the URL on the browser.
+After creating the Window class, we will create a QApplication object, which will essentially run our window.
+The QApplication.exec_() is used to run the application.
+
+Summary
+Congratulations! You have now created your own Web Browser using the PyQt5 library.
+
+However, this is not the end of the road. This is a basic web browser, but with the power of Python, you can make it way better!
