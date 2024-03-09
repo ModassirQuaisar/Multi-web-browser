@@ -26,3 +26,5 @@ c. QToolbar – This widget is used to add a frame-like container to the top of 
 
 
 The PyQT5 library does not come installed with Python, and the QtWebEngineWidgets module does not come installed with the PyQt5 library, so we will need to run the following command in the command terminal to install them:
+
+python -m pip install pyqt5 qtwebengine
