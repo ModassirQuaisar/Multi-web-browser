@@ -48,7 +48,7 @@ The update_AddressBar() method is used to set the text of our address bar to the
 After creating the Window class, we will create a QApplication object, which will essentially run our window.
 The QApplication.exec_() is used to run the application.
 
-Summary
+## Summary
 Congratulations! You have now created your own Web Browser using the PyQt5 library.
 
 However, this is not the end of the road. This is a basic web browser, but with the power of Python, you can make it way better!
