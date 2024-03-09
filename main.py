@@ -75,6 +75,18 @@ class Window(QMainWindow):
 		twitter.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.twitter.com")))
 		bookmarks_toolbar.addAction(twitter)
 
+		snapchat = QAction("Snapchat", self)
+		snapchat.setStatusTip('Go to Snapchat')
+		snapchat.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.snapchat.com")))
+		bookmarks_toolbar.addAction(snapchat)
+
+		chatgpt = QAction("ChatGpt", self)
+		chatgpt.setStatusTip('Go to ChatGpt')
+		chatgpt.triggered.connect(lambda: self.go_to_URL(QUrl("https://chat.openai.com")))
+		bookmarks_toolbar.addAction(chatgpt)
+
+
+
 		self.browser.maximumSize()
 		self.show()
 
